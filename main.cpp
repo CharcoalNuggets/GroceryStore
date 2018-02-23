@@ -22,11 +22,11 @@ int main()
   if (input == 'A' || input == 'a')
   {
   cout<<"What is the item?\n";
+  cin>> something;
   }
 
   if (numItems < 4)
   {
-  cin>> something;
   list[numItems] = something;
   numItems++;
   }
@@ -34,8 +34,8 @@ int main()
   else 
   {
   cout<<"You'll need a bigger list!\n";
-  numItems++;
   }
+
  }while (!(input == 'Q' || input == 'q'));
   
   return 0;
