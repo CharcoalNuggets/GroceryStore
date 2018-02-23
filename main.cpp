@@ -34,6 +34,7 @@ int main()
   else 
   {
   cout<<"You'll need a bigger list!\n";
+  numItems++;
   }
  }while (!(input == 'Q' || input == 'q'));
   
