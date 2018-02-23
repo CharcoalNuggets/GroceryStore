@@ -19,19 +19,22 @@ int main()
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
   
-  if (numItems > 4)
-  {
-  cout<<"You'll need a bigger list!\n";
-  }
-
-  else if (input == 'A' || input == 'a')
+  if (input == 'A' || input == 'a')
   {
   cout<<"What is the item?\n";
+  }
+
+  if (numItems < 4)
+  {
   cin>> something;
   list[numItems] = something;
   numItems++;
   }
 
+  else 
+  {
+  cout<<"You'll need a bigger list!\n";
+  }
  }while (!(input == 'Q' || input == 'q'));
   
   return 0;
